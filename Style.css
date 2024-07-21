@@ -1,0 +1,238 @@
+/* Reset some basic styles */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Style for the navigation bar */
+nav {
+    background-color: #fa6c6c; /* Dark background color */
+    overflow: hidden;
+}
+
+/* Style for the unordered list within the nav */
+.unordered-list-nav {
+    display: flex;
+    justify-content: space-around; /* Evenly space out the list items */
+    align-items: center;
+    padding: 0;
+}
+
+/* Style for the list items */
+.unordered-li {
+    margin: 0;
+    padding: 15px 20px; /* Space around each item */
+}
+
+/* Style for the links within the list items */
+.unordered-li a {
+    color: white; /* White text color */
+    font-family: Arial, sans-serif; /* Font styling */
+    font-size: 16px;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Red hover effect for the links */
+.unordered-li a:hover {
+    color: red; /* Change text color to red on hover */
+}
+
+/* Style for the image list item */
+.list-image {
+    margin-left: auto; /* Push the image to the right end */
+    padding: 0;
+}
+
+/* Style for the image */
+.nav-bar-image {
+    height: 40px; /* Adjust size as needed */
+    width: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.list-image{
+    align-self: flex-end;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-bar-image{
+    width: 20px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.top-section-container{
+    background-image: linear-gradient(to right, #f7e9a8, #f58cee);
+    display:flex;
+}
+
+.top-text-container{
+    width:50%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: "Arial";
+}
+
+.top-section-heading{
+    font-size: 40px;
+    width: 100%;
+}
+.top-section-message{
+    font-size: 13px;
+}
+
+.click-me-button{
+    width: 40%;
+    background-color: #f56464;
+    border: 0;
+    outline: none;
+    color: #fff;
+    padding: 8px 0px;
+    font-size: 12px;
+    font-family: "candara light";
+}
+
+.top-image-container {
+    width:50%;
+}
+
+.top-section-image{
+    width:100%;
+}
+
+.bottom-section-container {
+    background-image: linear-gradient(to right, #f7e9a8, #f58cee);
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.bottom-section-image-container{
+    width: 50%;
+    display: flex;
+}
+
+.bottom-section-two-images {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.image-1{
+    width: 100%;
+    margin-bottom: 10px;
+    height: 200px;
+}
+
+.bottom-section-height-image{
+    width: 50%;
+}
+
+.bottom-section-text-container{
+    background-color: #f56464;
+    padding: 5%;
+    width: 30%;
+    font-family: "Arial";
+}
+
+.bottom-section-small-heading {
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+
+.bottom-section-heading {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.arrow-click-container {
+    display: flex;
+    align-items: center;
+}
+
+.click-heading {
+    font-size: 10px;
+}
+
+.right-arrow-image {
+    width: 20px;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 576px) {
+    .unordered-list-nav {
+        flex-direction: column;
+    }
+
+    .unordered-li{
+        display: none;
+    }
+
+    .top.section-container {
+        flex-direction: column;
+    }
+
+    .top-text-container {
+        width: 90%;
+        order: 2;
+    }
+
+    .top-section-message {
+        margin-bottom: 20px;
+    }
+
+    .top-section-heading {
+        margin-bottom: 10px;
+    }
+
+    .top-image-container{
+        width: 100px;
+        order: 1;
+    }
+
+    .list-image {
+        align-content: flex-end;
+    }
+
+    .bottom-section-container {
+        flex-direction: column;
+    }
+
+    .bottom-section-image-container{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .image-1 {
+        width: 100%;
+    }
+
+    .bottom-section-text-container{
+        width: 90%;
+        margin-top: 20px;
+    }
+}
